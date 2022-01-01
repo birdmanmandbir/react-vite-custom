@@ -16,8 +16,27 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "eslint": "^8.6.0",
+    "husky": "^7.0.4",
     "less": "^4.1.2",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1",
     "vite": "^2.7.2",
     "vite-plugin-imp": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "src/**/*.{js,jsx}": [
+      "eslint --cache --fix",
+      "git add"
+    ]
   }
 }
