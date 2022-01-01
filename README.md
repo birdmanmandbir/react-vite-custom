@@ -1,5 +1,3 @@
-参数配置页面如何组件化？子组件往往需要修改 props 状态，保存时也需要复杂的事件处理
-
 react 的事件处理有点复杂，vue 好像不用关注这些细节
 使用 class field 实验性语法比较好：
 
@@ -22,7 +20,5 @@ class LoggingButton extends React.Component {
 [参考链接](https://juejin.cn/post/6938671679153373214#heading-5)
 [官方推荐的校验库-formik](https://formik.org/)
 [配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
-
-状态提升的思想很适合用于参数配置界面，不知道 vue 是否可以支持类似写法；
 
 官方建议不使用继承，组件的继承关系可以用组合，类似 v-slot 的方式实现；
