@@ -16,7 +16,11 @@ function ProductTable(props) {
   return (
     <div>
       <h2>{props.title}</h2>
-      <Table dataSource={props.dataSource} columns={colConfig} />
+      <Table
+        dataSource={props.dataSource}
+        columns={colConfig}
+        rowKey={(record) => record.name}
+      />
     </div>
   )
 }
