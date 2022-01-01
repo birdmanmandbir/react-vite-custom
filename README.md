@@ -22,3 +22,7 @@ class LoggingButton extends React.Component {
 [参考链接](https://juejin.cn/post/6938671679153373214#heading-5)
 [官方推荐的校验库-formik](https://formik.org/)
 [配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
+
+状态提升的思想很适合用于参数配置界面，不知道 vue 是否可以支持类似写法；
+
+官方建议不使用继承，组件的继承关系可以用组合，类似 v-slot 的方式实现；
