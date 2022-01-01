@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Clock from './Clock'
+import Clock from './components/Clock'
+import FlavorForm from './components/selectForm'
+import AntdButton from './components/AntdButton'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,6 +18,8 @@ function App() {
           </button>
         </p>
         <Clock />
+        <FlavorForm />
+        <AntdButton />
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
