@@ -1,8 +1,9 @@
 .external {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
-.product-table {
-  width: 70%;
+.productTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

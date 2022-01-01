@@ -12,9 +12,12 @@ const colConfig = [
     key: 'price'
   }
 ]
+
+const style = { width: '100%' }
+
 function ProductTable(props) {
   return (
-    <div>
+    <div style={style}>
       <h2>{props.title}</h2>
       <Table
         dataSource={props.dataSource}

@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductTable from './ProductTable'
+import SearchBar from './SearchBar'
 import mockData from './mockData'
 import './App.css'
 
@@ -10,7 +11,8 @@ class FilterableProductTable extends React.Component {
   render() {
     return (
       <div className="external">
-        <div className="product-table">
+        <SearchBar />
+        <div className="productTable">
           <ProductTable
             title="Sporting Goods"
             dataSource={mockData.filter(
