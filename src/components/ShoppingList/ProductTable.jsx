@@ -1,4 +1,4 @@
-import { Table } from 'antd'
+import { Table, Pagination } from 'antd'
 
 const colConfig = [
   {
