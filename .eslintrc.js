@@ -17,5 +17,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: {}
+  // 0: close; 1: warn; 2: error
+  rules: {
+    'react/react-in-jsx-scope': '0'
+  }
 };
