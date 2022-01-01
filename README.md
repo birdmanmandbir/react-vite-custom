@@ -19,3 +19,8 @@ class LoggingButton extends React.Component {
   }
 }
 ```
+
+使用vite-plugin-imp进行了css按需加载，打包体积如下：
+![](./markdown_assets/Snipaste_2022-01-01_14-03-25.png)
+[参考链接](https://juejin.cn/post/6938671679153373214#heading-5)
+
