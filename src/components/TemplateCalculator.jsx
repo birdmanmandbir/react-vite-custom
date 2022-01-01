@@ -30,7 +30,7 @@ class TemperatureInput extends React.Component {
 }
 
 class Calculator extends React.Component {
-    render() {
+        render() {
         return (
             <div>
                 <TemperatureInput scale="c" />
