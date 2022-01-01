@@ -1,26 +1,24 @@
-参数配置页面如何组件化？子组件往往需要修改props状态，保存时也需要复杂的事件处理
+参数配置页面如何组件化？子组件往往需要修改 props 状态，保存时也需要复杂的事件处理
 
-react的事件处理有点复杂，vue好像不用关注这些细节
-使用class field实验性语法比较好：
+react 的事件处理有点复杂，vue 好像不用关注这些细节
+使用 class field 实验性语法比较好：
+
 ```js
 class LoggingButton extends React.Component {
   // 此语法确保 `handleClick` 内的 `this` 已被绑定。
   // 注意: 这是 *实验性* 语法。
   handleClick = () => {
-    console.log('this is:', this);
+    console.log('this is:', this)
   }
 
   render() {
-    return (
-      <button onClick={this.handleClick}>
-        Click me
-      </button>
-    );
+    return <button onClick={this.handleClick}>Click me</button>
   }
 }
 ```
 
-使用vite-plugin-imp进行了css按需加载，打包体积如下：
+使用 vite-plugin-imp 进行了 css 按需加载，打包体积如下：
 ![](./markdown_assets/Snipaste_2022-01-01_14-03-25.png)
 [参考链接](https://juejin.cn/post/6938671679153373214#heading-5)
-
+[官方推荐的校验库-formik](https://formik.org/)
+[配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
