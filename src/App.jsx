@@ -1,28 +1,21 @@
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Clock from './components/Clock';
 import FlavorForm from './components/selectForm';
-import AntdButton from './components/AntdButton';
+import TemperatureCalculator from './components/TemperatureCalculator';
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </button>
         </p>
-        <Clock />
+        <TemperatureCalculator />
         <FlavorForm />
-        <AntdButton />
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
         <p>
           <a
             className="App-link"
