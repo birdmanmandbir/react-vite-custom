@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import Clock from './components/Clock'
-import FlavorForm from './components/selectForm'
-import AntdButton from './components/AntdButton'
+import { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Clock from './components/Clock';
+import FlavorForm from './components/selectForm';
+import AntdButton from './components/AntdButton';
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -44,7 +44,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
