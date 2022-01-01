@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import './App.css';
-import FlavorForm from './components/selectForm';
-import TemperatureCalculator from './components/TemperatureCalculator';
+import { useState } from 'react'
+import './App.css'
+import FlavorForm from './components/selectForm'
+import TemperatureCalculator from './components/TemplateCalculator/Calculator'
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -37,7 +37,7 @@ function App() {
         </p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
