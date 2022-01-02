@@ -1,13 +1,24 @@
 import { useState } from 'react'
+import styled from 'styled-components'
 import './App.css'
 import FlavorForm from './components/selectForm'
 import FilterableProductTable from './components/ShoppingList/FilterableProductTable'
+
+const Hidden = styled.div`
+  display: none;
+`
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FlavorForm />
-        <FilterableProductTable />
+        <Hidden>
+          <FlavorForm
+            style={{ display: 'none', width: 10 }}
+            className="testFlavorForm"
+          />
+        </Hidden>
+        <FilterableProductTable style={{ display: 'none', width: 10 }} />
         <p>
           <a
             className="App-link"

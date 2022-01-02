@@ -22,3 +22,8 @@ class LoggingButton extends React.Component {
 [配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
 
 官方建议不使用继承，组件的继承关系可以用组合，类似 v-slot 的方式实现；
+
+# TODO
+
+- 图表绘制
+- 更好的组件库（antd 的按需引入很不方便）
