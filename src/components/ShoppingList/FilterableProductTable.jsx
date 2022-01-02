@@ -19,8 +19,8 @@ class FilterableProductTable extends React.Component {
     this.setState({ filterText: e.target.value })
   }
 
-  handleIsStockOnlyChange(e) {
-    this.setState({ isStockOnly: e.target.checked })
+  handleIsStockOnlyChange(value) {
+    this.setState({ isStockOnly: value })
   }
 
   getDisplayedItems() {

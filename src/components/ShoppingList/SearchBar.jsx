@@ -1,6 +1,6 @@
-import { Input, Checkbox } from 'antd'
+import { Input, Switch } from 'antd'
 const inputStyle = {
-  width: 120,
+  width: 140,
   marginBottom: 15,
   marginRight: 15
 }
@@ -13,12 +13,12 @@ function SearchBar(props) {
         value={props.filterText}
         onChange={props.handleFilterTextChange}
       ></Input>
-      <Checkbox
+      <Switch
         checked={props.isStockOnly}
         onChange={props.handleIsStockOnlyChange}
-      >
-        Only show products in stock
-      </Checkbox>
+        style={{ marginRight: 10 }}
+      />
+      <label>Only show products in stock</label>
     </div>
   )
 }
