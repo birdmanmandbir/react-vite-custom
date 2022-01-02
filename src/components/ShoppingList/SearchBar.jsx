@@ -1,5 +1,4 @@
-import { Input } from 'antd'
-import Checkbox from 'antd/lib/checkbox/Checkbox'
+import { Input, Checkbox } from 'antd'
 const inputStyle = {
   width: 120,
   marginBottom: 15,
