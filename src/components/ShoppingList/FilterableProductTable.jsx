@@ -24,9 +24,10 @@ class FilterableProductTable extends React.Component {
   }
 
   getDisplayedItems() {
-    const ret = this.state.isStockOnly
+    let ret = this.state.isStockOnly
       ? mockData.filter((item) => item.stocked === true)
       : mockData
+    ret = ret.filter((item) => item.name.startsWith(this.state.filterText))
     return ret
   }
 

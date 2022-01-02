@@ -22,6 +22,7 @@ const colConfig = [
 const style = { width: '100%' }
 
 function ProductTable(props) {
+  if (props.dataSource.length === 0) return null
   return (
     <div style={style}>
       <h2>{props.title}</h2>
