@@ -10,6 +10,12 @@ const colConfig = [
     title: 'Price',
     dataIndex: 'price',
     key: 'price'
+  },
+  {
+    title: 'Stocked',
+    dataIndex: 'stocked',
+    key: 'stocked',
+    render: (stocked) => (stocked ? 'Yes' : 'No')
   }
 ]
 

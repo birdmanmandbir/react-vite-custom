@@ -23,7 +23,15 @@ class FilterableProductTable extends React.Component {
     this.setState({ isStockOnly: e.target.checked })
   }
 
+  getDisplayedItems() {
+    const ret = this.state.isStockOnly
+      ? mockData.filter((item) => item.stocked === true)
+      : mockData
+    return ret
+  }
+
   render() {
+    const displayedItems = this.getDisplayedItems()
     return (
       <div className="external">
         <SearchBar
@@ -35,13 +43,13 @@ class FilterableProductTable extends React.Component {
         <div className="productTable">
           <ProductTable
             title="Sporting Goods"
-            dataSource={mockData.filter(
+            dataSource={displayedItems.filter(
               (item) => item.category === 'Sporting Goods'
             )}
           />
           <ProductTable
             title="Electronics"
-            dataSource={mockData.filter(
+            dataSource={displayedItems.filter(
               (item) => item.category === 'Electronics'
             )}
           />

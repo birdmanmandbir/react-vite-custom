@@ -14,7 +14,7 @@ function SearchBar(props) {
         onChange={props.handleFilterTextChange}
       ></Input>
       <Checkbox
-        value={props.isStockOnly}
+        checked={props.isStockOnly}
         onChange={props.handleIsStockOnlyChange}
       >
         Only show products in stock
