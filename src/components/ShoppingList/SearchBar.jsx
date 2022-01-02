@@ -1,8 +1,9 @@
 import { Input } from 'antd'
 import Checkbox from 'antd/lib/checkbox/Checkbox'
 const inputStyle = {
-  width: 100,
-  marginBottom: 15
+  width: 120,
+  marginBottom: 15,
+  marginRight: 15
 }
 function SearchBar(props) {
   return (
