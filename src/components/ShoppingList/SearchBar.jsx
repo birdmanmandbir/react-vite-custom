@@ -7,8 +7,18 @@ const inputStyle = {
 function SearchBar(props) {
   return (
     <div className="searchBar">
-      <Input placeholder="Search..." style={inputStyle}></Input>
-      <Checkbox>Only show products in stock</Checkbox>
+      <Input
+        placeholder="Search..."
+        style={inputStyle}
+        value={props.filterText}
+        onChange={props.handleFilterTextChange}
+      ></Input>
+      <Checkbox
+        value={props.isStockOnly}
+        onChange={props.handleIsStockOnlyChange}
+      >
+        Only show products in stock
+      </Checkbox>
     </div>
   )
 }
