@@ -13,12 +13,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Hidden>
-          <FlavorForm
-            style={{ display: 'none', width: 10 }}
-            className="testFlavorForm"
-          />
+          <FlavorForm />
         </Hidden>
-        <FilterableProductTable style={{ display: 'none', width: 10 }} />
+        <FilterableProductTable />
         <p>
           <a
             className="App-link"
