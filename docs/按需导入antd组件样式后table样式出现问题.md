@@ -10,3 +10,8 @@ import { Table, Pagination } from 'antd'
 [vite 尝鲜 - 掘金](https://juejin.cn/post/6919104746867556365)
 参考github此issue后解决：
 [vite 是否可以配置 antd-vue 按需求加载 · Issue #1389 · vitejs/vite](https://github.com/vitejs/vite/issues/1389)
+
+其他参考资料：
+[在 umi 项目中使用 vite - 知乎](https://zhuanlan.zhihu.com/p/399998544)
+[umi介绍](https://umijs.org/zh-CN/docs) 类似next.js
+
