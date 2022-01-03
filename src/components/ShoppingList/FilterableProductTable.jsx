@@ -17,9 +17,6 @@ function getDisplayedItems(filterText, isStockOnly) {
 function FilterableProductTable() {
   const [filterText, setFilterText] = useState('')
   const [isStockOnly, setIsStockOnly] = useState(false)
-  function 啊() {
-    const [filterText, setFilterText] = useState('')
-  }
   const displayedItems = getDisplayedItems(filterText, isStockOnly)
   return (
     <div className="external">

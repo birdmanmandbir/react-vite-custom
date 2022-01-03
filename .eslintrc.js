@@ -5,8 +5,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -20,8 +20,8 @@ module.exports = {
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
   // 0: close; 1: warn; 2: error
   rules: {
-    'react/react-in-jsx-scope': 'close',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error'
+    'react/react-in-jsx-scope': 0,
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 2
   }
 }
