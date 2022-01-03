@@ -5,4 +5,8 @@
 ```js
 import { Table, Pagination } from 'antd'
 ```
-目前没有更好的解决方案, 或许可以增加对vite-plugin-imp的定制配置解决, 根本上还是antd官方对按需引入的支持不足, 或许可以考虑其他组件库
+
+
+[vite 尝鲜 - 掘金](https://juejin.cn/post/6919104746867556365)
+参考github此issue后解决：
+[vite 是否可以配置 antd-vue 按需求加载 · Issue #1389 · vitejs/vite](https://github.com/vitejs/vite/issues/1389)

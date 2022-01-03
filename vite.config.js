@@ -8,16 +8,17 @@ export default defineConfig({
     vitePluginImp({
       libList: [
         {
-          libName: "antd",
-          style: (name) => `antd/lib/${name}/style/index.less`,
-        },
-      ],
-    })],
+          libName: 'antd',
+          style: (name) => `antd/es/${name}/style`
+        }
+      ]
+    })
+  ],
   css: {
     preprocessorOptions: {
       less: {
         // 支持内联 JavaScript
-        javascriptEnabled: true,
+        javascriptEnabled: true
       }
     }
   }
