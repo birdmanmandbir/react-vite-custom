@@ -1,21 +1,29 @@
 import { Table } from 'antd'
+import PropTypes from 'prop-types'
+const redText = {
+  color: 'red'
+}
+
+const greenText = {
+  color: 'green'
+}
 
 const colConfig = [
   {
     title: 'Name',
     dataIndex: 'name',
-    key: 'name'
+    key: 'name',
+    render: (text, record) => {
+      if (record.stocked) {
+        return <span style={greenText}>{text}</span>
+      }
+      return <span style={redText}>{text}</span>
+    }
   },
   {
     title: 'Price',
     dataIndex: 'price',
     key: 'price'
-  },
-  {
-    title: 'Stocked',
-    dataIndex: 'stocked',
-    key: 'stocked',
-    render: (stocked) => (stocked ? 'Yes' : 'No')
   }
 ]
 
@@ -33,6 +41,11 @@ function ProductTable(props) {
       />
     </div>
   )
+}
+
+ProductTable.propTypes = {
+  dataSource: PropTypes.object,
+  title: PropTypes.string
 }
 
 export default ProductTable
