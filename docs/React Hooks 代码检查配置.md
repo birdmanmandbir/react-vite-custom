@@ -1,4 +1,4 @@
-# React Hooks 代码检查配置
+# React Hook 代码检查配置
 安装依赖
 ```bash
 yarn add eslint-plugin-react-hooks --dev
@@ -25,7 +25,7 @@ function a() {
   const [aa, setAa] = useState('')
 }
 ```
-如果提示不能在嵌套函数内使用hooks, 则配置成功
+如果提示不能在嵌套函数内使用hook, 则配置成功
 
 注意:
 如果是vscode用户, 不方便查看eslint的报错, 可以用webstorm打开项目, 即可看到eslint的报错

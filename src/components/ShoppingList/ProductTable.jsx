@@ -44,7 +44,7 @@ function ProductTable(props) {
 }
 
 ProductTable.propTypes = {
-  dataSource: PropTypes.object,
+  dataSource: PropTypes.array,
   title: PropTypes.string
 }
 
