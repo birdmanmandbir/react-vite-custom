@@ -3,7 +3,8 @@
 1. 配置 antd 支持, 并通过 vite-plugin-imp 实现按需引入样式
 2. 配置 prettier 支持, 提交时默认格式化
 3. 配置 react-hook 语法检查, 减少 hook 书写时可能导致的 bug
-4. 包含一些阅读 react 官方文档时写的 jsx 样例
+4. 使用 styled-components 实现更好的 css in js 书写体验
+5. 包含一些阅读 react 官方文档时写的 jsx 样例
 
 ## TODO
 
