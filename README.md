@@ -1,3 +1,17 @@
+# React-vite 项目脚手架
+
+1. 配置 antd 支持, 并通过 vite-plugin-imp 实现按需引入样式
+2. 配置 prettier 支持, 提交时默认格式化
+3. 配置 react-hook 语法检查, 减少 hook 书写时可能导致的 bug
+4. 包含一些阅读 react 官方文档时写的 jsx 样例
+
+## TODO
+
+- 图表绘制
+- 其他组件库（antd 的按需引入不太方便）
+- gis 支持
+- tsx 学习
+
 react 的事件处理有点复杂，vue 好像不用关注这些细节
 使用 class field 实验性语法比较好：
 
@@ -22,8 +36,3 @@ class LoggingButton extends React.Component {
 [配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
 
 官方建议不使用继承，组件的继承关系可以用组合，类似 v-slot 的方式实现；
-
-# TODO
-
-- 图表绘制
-- 更好的组件库（antd 的按需引入很不方便）
