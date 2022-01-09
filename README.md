@@ -12,6 +12,7 @@
 - 其他组件库（antd 的按需引入不太方便）
 - gis 支持
 - tsx 学习
+- react graphql typescript
 
 react 的事件处理有点复杂，vue 好像不用关注这些细节
 使用 class field 实验性语法比较好：
