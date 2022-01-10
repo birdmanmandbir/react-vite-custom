@@ -51,5 +51,11 @@
   },
   "resolutions": {
     "styled-components": "^5"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
