@@ -38,3 +38,10 @@ class LoggingButton extends React.Component {
 [配置 eslint，prettier，husky](https://dev.to/smetankajakub/how-to-integrate-husky-eslint-prettier-to-project-in-less-than-15-minutes-5gh)
 
 官方建议不使用继承，组件的继承关系可以用组合，类似 v-slot 的方式实现；
+
+## React 写 css 方案调研
+
+[如何在 React 中优雅的写 CSS-InfoQ](https://www.infoq.cn/article/ftlppdefo27prgqhlo5a)
+如果无法引入 styled-components，应该还有 css modules 可以选择，虽然不太方便
+
+tsx 中使用 styled-components 需要添加：@types/styled-components

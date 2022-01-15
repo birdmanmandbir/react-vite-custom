@@ -18,11 +18,12 @@ function getMileSecondFromHour(hours: number): number {
 }
 
 function getFormatStringOfDate(date: Date): string {
-  // https://dayjs.gitee.io/docs/zh-CN/display/format
-  return dayjs(date).format('YYYY 年 MM 月 DD 日-HH 时 mm 分')
+  // dayjs教程：https://dayjs.gitee.io/docs/zh-CN/display/format
+  return dayjs(date).format('YY 年 MM 月 DD 日-HH 时 mm 分')
 }
 
 function getFinishTime(hours: number): string {
+  // js时间操作：https://www.cnblogs.com/carekee/articles/1678041.html
   const elapsedTime = getMileSecondFromHour(hours)
   const curTime = new Date().getTime()
   const retTime = curTime + elapsedTime
