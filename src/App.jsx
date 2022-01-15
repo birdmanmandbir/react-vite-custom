@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import './App.css'
 import FlavorForm from './components/selectForm'
 import FilterableProductTable from './components/ShoppingList/FilterableProductTable'
+import BreadAssistant from './components/BreadAssistant/BreadAssistant'
 
 const Hidden = styled.div`
   display: none;
@@ -14,7 +15,10 @@ function App() {
         <Hidden>
           <FlavorForm />
         </Hidden>
-        <FilterableProductTable />
+        <BreadAssistant />
+        <Hidden>
+          <FilterableProductTable />
+        </Hidden>
         <p>
           <a
             className="App-link"
