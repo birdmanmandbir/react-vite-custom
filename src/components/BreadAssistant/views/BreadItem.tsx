@@ -1,16 +1,12 @@
 import { Input } from 'antd'
 import { useState } from 'react'
-import styled from 'styled-components'
+import Block from '../../../common/Block'
 import * as dayjs from 'dayjs'
 // styles
 const inputStyle = {
   width: 120,
   margin: '0 10px'
 }
-
-const FormItem = styled.div`
-  margin-bottom: 10px;
-`
 
 // functions
 function getMileSecondFromHour(hours: number): number {
@@ -42,7 +38,7 @@ export default function BreadItem() {
       <div style={{ marginBottom: 10 }}>
         当前时间：{getFormatStringOfDate(curDate)}
       </div>
-      <FormItem>
+      <Block>
         <span>输入酵头发酵时间: </span>
         <Input
           style={inputStyle}
@@ -51,8 +47,8 @@ export default function BreadItem() {
         />
         <span>酵头预计发酵完成时间: </span>
         <span>{getFinishTime(time1)}</span>
-      </FormItem>
-      <FormItem>
+      </Block>
+      <Block>
         <span>输入面团发酵时间: </span>
         <Input
           style={inputStyle}
@@ -61,11 +57,11 @@ export default function BreadItem() {
         />
         <span>面团预计发酵完成时间: </span>
         <span>{getFinishTime(time2)}</span>
-      </FormItem>
-      <FormItem>
+      </Block>
+      <Block>
         <span>总共预计发酵完成时间：</span>
         <span>{getFinishTime(time1 + time2)}</span>
-      </FormItem>
+      </Block>
     </div>
   )
 }

@@ -1,12 +1,5 @@
 import { Table, Button } from 'antd'
-import styled from 'styled-components'
-
-const Header = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10px;
-`
+import Header from '../Header'
 
 function BreadTable() {
   return (

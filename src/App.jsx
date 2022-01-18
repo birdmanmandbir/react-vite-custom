@@ -1,12 +1,8 @@
-import styled from 'styled-components'
 import './App.css'
 import FlavorForm from './components/selectForm'
 import FilterableProductTable from './components/ShoppingList/FilterableProductTable'
 import BreadAssistant from './components/BreadAssistant/BreadAssistant'
-
-const Hidden = styled.div`
-  display: none;
-`
+import Hidden from './common/Hidden'
 
 function App() {
   return (

@@ -15,6 +15,11 @@ export default defineConfig({
     })
   ],
   css: {
+    // css module
+    modules: {
+      generateScopedName: `[name]_[local]__[hash:base64:5]`,
+      hashPrefix: 'prefix'
+    },
     preprocessorOptions: {
       less: {
         // 支持内联 JavaScript

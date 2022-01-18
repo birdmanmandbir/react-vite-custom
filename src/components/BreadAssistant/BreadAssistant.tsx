@@ -1,9 +1,7 @@
+import Block from '../../common/Block'
 import BreadItem from './views/BreadItem'
 import BreadTable from './views/BreadTable'
-import styled from 'styled-components'
-const Block = styled.div`
-  margin-bottom: 10px;
-`
+
 function BreadAssistant() {
   return (
     <div>
